@@ -1,5 +1,10 @@
-**Status:** Archive (code is provided as-is, no updates expected)
+The code for **Adaptive Cooperative Control Of Swarm Robotics For Searching Multiple Targets In Boundless Environment**
 
+There are three parts uesd to update action speed in the environment.py. The imp-action is for the IPFSMS, while the PSO_action is for the A-RPSO.And the GES_action is for the GES.
+The Major places I worked in contain: environment.py, core.py, simple.py, FSTM_controller.py, PSO_controller.py, GES_controller.py. Other code files aren't modified in my experiment. 
+
+Here is the environment I use in the code:
+https://github.com/openai/multiagent-particle-envs
 # Multi-Agent Particle Environment
 
 A simple multi-agent particle world with a continuous observation and discrete action space, along with some basic simulated physics.
@@ -43,7 +48,7 @@ Used in the paper [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive En
 
 You can create new scenarios by implementing the first 4 functions above (`make_world()`, `reset_world()`, `reward()`, and `observation()`).
 
-## List of environments
+## the environment I use
 
 
 | Env name in code (name in paper) |  Communication? | Competitive? | Notes |
