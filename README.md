@@ -7,12 +7,12 @@ The code for **Adaptive Cooperative Control Of Swarm Robotics For Searching Mult
 
 https://github.com/openai/multiagent-particle-envs
 
-# Multi-Agent Particle Environment
+## Multi-Agent Particle Environment
 
 A simple multi-agent particle world with a continuous observation and discrete action space, along with some basic simulated physics.
 Used in the paper [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](https://arxiv.org/pdf/1706.02275.pdf).
 
-## Getting started:
+### Getting started:
 
 - To install, `cd` into the root directory and type `pip install -e .`
 
@@ -23,7 +23,7 @@ Used in the paper [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive En
 
 - To use the environments, look at the code for importing them in `make_env.py`.
 
-## Code structure
+### Code structure
 
 - `make_env.py`: contains code for importing a multiagent environment as an OpenAI Gym-like object.
 
@@ -50,7 +50,7 @@ Used in the paper [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive En
 
 You can create new scenarios by implementing the first 4 functions above (`make_world()`, `reset_world()`, `reward()`, and `observation()`).
 
-## the environment I use
+### the environment I use
 
 
 | Env name in code (name in paper) |  Communication? | Competitive? | Notes |
@@ -58,7 +58,7 @@ You can create new scenarios by implementing the first 4 functions above (`make_
 | `simple_spread.py` (Cooperative navigation) | N | N | N agents, N landmarks. Agents are rewarded based on how far any agent is from each landmark. Agents are penalized if they collide with other agents. So, agents have to learn to cover all the landmarks while avoiding collisions. |
 
 
-## Paper citation
+### Paper citation
 
 If you used this environment for your experiments or found it helpful, consider citing the following papers:
 
